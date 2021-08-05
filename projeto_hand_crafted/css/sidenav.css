@@ -1,0 +1,104 @@
+.simple ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* justify-content: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.simple ul li{
+    text-align:center;
+    margin-bottom: 20px;
+    flex:1;
+}
+@media screen and (min-width:768px) {
+    .simple ul {
+        flex-direction: row;
+    }
+    .simple ul li {
+        margin-bottom: 0px;
+    }
+}
+
+.simple-sidenav {
+  background-color: #fe0048;
+  cursor: pointer;
+  font-family: 'El Messiri', sans-serif;
+}
+.simple-sidenav ul {
+  list-style:none;
+  margin:0px;
+  padding:0;
+}
+.simple-sidenav ul li {
+  padding: 1.3rem;
+}
+.simple-sidenav ul li:hover {
+  background-color: #ea122b;
+}
+.simple-sidenav ul li:focus {
+  background-color: #d30d45c2;
+}
+.simple-sidenav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 0px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 0px 8px 0px 0px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: white;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /*openbar*/
+
+.sidenav{
+    min-height: calc( 100vh - 20px );
+    max-width: 800px;
+    width: 0px;
+    margin: 0 auto;
+    position: absolute;
+    padding: 0px 0px 0 0px;
+}
+/*
+#li-none-open{
+    display: inline;
+    cursor: pointer;
+}
+#li-none-close{
+    display: none;
+    cursor: pointer;
+}*/

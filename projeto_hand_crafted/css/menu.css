@@ -1,0 +1,381 @@
+/** Menu simple - saluscas **/
+.simple ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* justify-content: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.simple ul li{
+    text-align:center;
+    margin-bottom: 20px;
+    flex:1;
+}
+@media screen and (min-width:768px) {
+    .simple ul {
+        flex-direction: row;
+    }
+    .simple ul li {
+        margin-bottom: 0px;
+    }
+}
+
+/* icons */
+.icons ul li a {
+    display: flex;
+    justify-content:center;
+    flex:1;
+}
+.icons .icon{
+    font-size: 2rem;
+    flex: 0 0 3rem;
+}
+
+.icons .text {
+    font-size: 1.4rem;
+}
+.icons .text span {
+    font-size: 1.8rem;
+    display: block;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:480px) {
+    .icons ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .icons ul li {
+        display: flex;
+        flex: 0 0 calc( 50% - 2rem);
+    }
+}
+@media screen and (min-width:768px) {
+    .icons ul li {
+        display: flex;
+        flex: 1;
+    }
+}
+
+/** Multilevel **/
+.dropdown ul {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:768px) {
+    .dropdown ul {
+        flex-direction: row;
+    }
+}
+.dropdown ul li  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.dropdown ul li ul  {
+    margin-top: 1rem;
+    display: none;
+}
+.dropdown ul li:hover ul {
+    display: block;
+}
+.dropdown ul li ul li:hover{
+    background-color: #ff5e62;
+}
+@media screen and (min-width:768px) {
+    .dropdown ul li  {
+        position: relative;
+        display: flex;
+        flex: 0 1  100%;
+    }
+    .dropdown ul li ul {
+        display: none;
+        position: absolute;
+        top:100%;
+        left:0;
+    }
+
+    .dropdown ul li:hover ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ff5e62;
+        margin:0;
+    }
+}
+
+/** Social Networks **/
+.social-menu ul li span{
+    display: none;
+}
+.social-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    /* justify-content: center;
+    justify-content: space-around; */
+    /* justify-content: space-between; */
+    flex:1 0 auto;
+}
+.social-menu li{padding-top: 20px;}
+.social-menu ul li a:before {
+    font-family: "Font Awesome 5 Brands";
+}
+.social-menu ul li a[href*='facebook.com']::before {
+    content: "\f39e";
+}
+
+.social-menu ul li a[href*='twitter.com']::before {
+    content: "\f099";
+}
+.social-menu ul li a[href*='youtube.com']::before {
+    content: "\f431";
+}
+.social-menu ul li a[href*='instagram.com']::before {
+    content: "\f16d";
+}
+.social-menu ul li a[href*='pinterest.com']::before {
+    content: "\f231 ";
+}
+/* Social & dropdown*/
+.navegacion-social-dropdown{
+    background-color: #3F51B5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.navegacion-social-dropdown > nav {
+    flex: 0 0 100%;
+}
+.navegacion-social-dropdown .social-menu {
+    order: -1;
+}
+@media (min-width:768px) {
+    .navegacion-social-dropdown > nav {
+        flex: 0 0 auto;
+    }
+    .navegacion-social-dropdown .dropdown{ 
+        flex: 0 0 70%;
+    }
+    .navegacion-social-dropdown .social-menu {
+        order:unset;
+    }
+}
+nav {
+    background-color: #fe0048;
+}
+nav ul {
+    list-style:none;
+    margin:0px;
+    padding:0;
+}
+nav ul li {
+    padding: 1rem;
+}
+nav ul li:hover {
+    background-color: #d30d45c2;
+}
+nav ul li:focus {
+    background-color: #d30d45c2;
+}
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/** Menu simple **/
+.simple ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+.simple ul li{
+    text-align:center;
+    margin-bottom: 20px;
+    flex:1;
+}
+@media screen and (min-width:768px) {
+    .simple ul {
+        flex-direction: row;
+    }
+    .simple ul li {
+        margin-bottom: 0px;
+    }
+}
+
+/* icons */
+.icons ul li a {
+    display: flex;
+    justify-content:center;
+    flex:1;
+}
+.icons .icon{
+    font-size: 2rem;
+    flex: 0 0 3rem;
+}
+
+.icons .text {
+    font-size: 1.4rem;
+}
+.icons .text span {
+    font-size: .8rem;
+    display: block;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:480px) {
+    .icons ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .icons ul li {
+        display: flex;
+        flex: 0 0 calc( 50% - 2rem);
+    }
+}
+@media screen and (min-width:768px) {
+    .icons ul li {
+        display: flex;
+        flex: 1;
+    }
+}
+
+/** Multilevel **/
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:768px) {
+    .dropdown ul {
+        flex-direction: row;
+    }
+}
+.dropdown ul li  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'El Messiri', sans-serif;
+    text-transform: uppercase;
+}
+.dropdown ul li ul  {
+    margin-top: 1rem;
+    display: none;
+}
+.dropdown ul li:hover ul {
+    display: block;
+}
+.dropdown ul li ul li:hover{
+    background-color: #d30d45c2;
+}
+@media screen and (min-width:768px) {
+    .dropdown ul li  {
+        position: relative;
+        display: flex;
+        flex: 0 1  100%;
+    }
+    .dropdown ul li ul {
+        display: none;
+        position: absolute;
+        top:100%;
+        left:0;
+    }
+
+    .dropdown ul li:hover ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ff5e62;
+        margin:0;
+    }
+}
+
+/** Social Networks **/
+.social-menu ul li span{
+    display: none;
+}
+.social-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    /* justify-content: center;
+    justify-content: space-around; */
+    /* justify-content: space-between; */
+    flex:1 0 auto;
+}
+.social-menu ul li a:before {
+    font-family: "Font Awesome 5 Brands";
+}
+.social-menu ul li a[href*='facebook.com']::before {
+    content: "\f39e";
+}
+
+.social-menu ul li a[href*='twitter.com']::before {
+    content: "\f099";
+}
+.social-menu ul li a[href*='youtube.com']::before {
+    content: "\f431";
+}
+.social-menu ul li a[href*='instagram.com']::before {
+    content: "\f16d";
+}
+.social-menu ul li a[href*='pinterest.com']::before {
+    content: "\f231 ";
+}
+/* Social & dropdown*/
+.navegacion-social-dropdown{
+    background-color: #fe0048;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.navegacion-social-dropdown > nav {
+    flex: 0 0 100%;
+}
+.navegacion-social-dropdown .social-menu {
+    order: -1;
+}
+@media (min-width:768px) {
+    .navegacion-social-dropdown > nav {
+        flex: 0 0 auto;
+    }
+    .navegacion-social-dropdown .dropdown{ 
+        flex: 0 0 70%;
+    }
+    .navegacion-social-dropdown .social-menu {
+        order:unset;
+    }
+}
+
+/*openbar*/
+
+.bar{
+    min-height: calc( 100vh - 20px );
+    max-width: 800px;
+    width: 0px;
+    margin: 0 auto;
+    position: absolute;
+    padding: 0px 0px 0 0px;
+}
+
+#li-none-open{
+    display: inline;
+    cursor: pointer;
+}
+#li-none-close{
+    display: none;
+    cursor: pointer;
+}
+
+/*openbar*/
+.brand{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.5rem;
+}
+t{
+    color:black;
+}
